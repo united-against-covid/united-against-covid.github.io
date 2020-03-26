@@ -1,7 +1,7 @@
 United Against Covid
 ====================
 
-Joint [landing page](https://united-against-covid.github.io) for platforms connecting volunteers to COVID-19 researchers.
+Joint [landing page](united-against-covid.org) for platforms connecting volunteers to COVID-19 researchers.
 
 How to forward your 
 ====================
