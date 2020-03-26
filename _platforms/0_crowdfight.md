@@ -1,6 +1,6 @@
 ---
 name: "crowdfight"
-logo: "assets/img/crowdfight.jpg"
+logo: "assets/img/crowdfight.png"
 main_url: "https://crowdfightcovid19.org/"
 help_text: "In any project whatsoever that helps fighting the pandemic"
 help_url: "http://crowdfightcovid19.org/covid19researchers"
