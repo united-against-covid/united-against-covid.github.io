@@ -1,0 +1,26 @@
+---
+layout: default
+title: "United Against COVID-19"
+---
+
+<h1>United Against COVID-19</h1>
+
+<div class="platforms">
+    <div class="platform platforms-header">
+        <div class="platform-main"></div>
+        <div class="platform-content"></div>
+        <div class="platform-help">I need help...</div>
+        <div class="platform-offer">I want to offer help...</div>
+    </div>
+{% for platform in site.platforms %}
+    <div class="platform">
+        <a class="platform-main" href="{{ platform.main_url }}">
+            <span class="platform-logo" style="background-image: url('{{ platform.logo | relative_url }}')" alt="{{ platform.name }}"></span>
+            <span class="platform-name">{{ platform.name }}</span>
+        </a>
+        <div class="platform-content">{{platform.content}}</div>
+        <a class="platform-help" href="{{ platform.help_url }}"><span>{{ platform.help_text }}</span></a>
+        <a class="platform-offer" href="{{ platform.offer_url }}"><span>{{ platform.offer_text }}</span></a>
+    </div>
+{% endfor %}
+</div>

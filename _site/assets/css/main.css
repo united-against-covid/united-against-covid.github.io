@@ -1,0 +1,35 @@
+body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+html { min-width: 100%; min-height: 100%; margin: 0; padding: 0; }
+
+body { display: flex; flex-direction: column; min-height: 100%; min-width: 100%; margin: 0; padding: 0; justify-content: center; }
+
+h1 { margin: 20px auto; color: #b1b1b3; }
+
+.platforms { display: flex; flex-direction: column; max-width: 1200px; margin: 10px auto; min-width: 1100px; }
+
+.platform { display: flex; box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.06); border-radius: 50px; align-items: stretch; margin: 10px; }
+
+.platforms-header, .platforms-header div { box-shadow: none; }
+
+.platforms-header .platform-help::before, .platforms-header .platform-offer::before { margin-right: 0; content: ''; }
+
+.platform-main, .platform-help, .platform-offer { width: 260px; padding: 10px; text-decoration: none; color: black; display: flex; align-items: center; font-weight: bold; }
+
+.platform-content { flex: 1; padding: 10px 20px; }
+
+.platform-main { border-color: #b1b1b3; border-bottom-left-radius: 50px; border-top-left-radius: 50px; }
+
+.platform-logo { width: 100px; height: 100px; border-radius: 50px; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+
+.platform-name { margin-left: 10px; }
+
+.platform-help, .platform-offer, .platform-content, .platform-main { line-height: 1.5em; }
+
+.platform-help::before, .platform-offer::before { margin-right: 10px; content: '\21E2'; }
+
+.platform-help { border-color: #ffff00; color: #d81159; }
+
+.platform-offer { border-color: #2da1e3; color: #001f54; border-bottom-right-radius: 50px; border-top-right-radius: 50px; }
+
+/*# sourceMappingURL=main.css.map */
