@@ -2,34 +2,62 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 html { min-width: 100%; min-height: 100%; margin: 0; padding: 0; height: 100%; }
 
-body { display: flex; flex-direction: column; min-height: 100%; min-width: 100%; margin: 0; padding: 0; justify-content: center; height: 100%; }
+body { display: flex; flex-direction: column; min-height: 100%; min-width: 100%; margin: 0; padding: 0; justify-content: center; }
 
-h1 { margin: 20px auto; color: #b1b1b3; }
+h1 { color: #b1b1b3; margin: 0; }
 
 .platforms { display: flex; flex-direction: column; max-width: 1200px; margin: 10px auto; min-width: 1100px; }
 
-.platform { display: flex; box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.06); border-radius: 50px; align-items: stretch; margin: 10px; }
+.platform { display: flex; align-items: stretch; margin: 0 30px; }
+
+.platforms-header { margin-bottom: 0; }
+
+.platforms-header .platform-main { flex: 1; text-align: left; }
 
 .platforms-header, .platforms-header div { box-shadow: none; }
 
 .platforms-header .platform-help::before, .platforms-header .platform-offer::before { margin-right: 0; content: ''; }
 
-.platform-main, .platform-help, .platform-offer { width: 260px; padding: 10px; text-decoration: none; color: black; display: flex; align-items: center; font-weight: bold; }
+.platforms-header .platform-help, .platforms-header .platform-offer { border-top: 1px solid; border-left: 1px solid; border-right: 1px solid; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 0px; min-height: 40px; padding-top: 10px; display: block; }
 
-.platform-content { flex: 1; padding: 10px 20px; }
+.platforms-header .platform-help span, .platforms-header .platform-offer span { padding: 10px 20px; text-align: center; display: block; font-weight: normal; }
+
+.platforms-footer .platform-help, .platforms-footer .platform-offer { border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; border-top-right-radius: 0px; height: 50px; }
+
+.platform-main .wrapper { border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-left: 1px solid #c1c1c3; margin-left: -20px; }
+
+.platform-offer .wrapper { border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-right: 1px solid #c1c1c3; margin-right: -20px; }
+
+.platform-main, .platform-help, .platform-offer { width: 260px; text-decoration: none; color: black; display: flex; align-items: center; font-weight: bold; }
+
+.platform-content { flex: 1; }
+
+.header { display: none; }
 
 .platform-main { border-color: #b1b1b3; border-bottom-left-radius: 50px; border-top-left-radius: 50px; }
 
-.platform-logo { width: 100px; height: 100px; border-radius: 50px; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.platform-logo { display: block; width: 100px; height: 100px; border-radius: 50px; background-size: contain; background-repeat: no-repeat; background-position: center center; }
 
-.platform-name { margin-left: 10px; }
+.platform-name { margin-left: 10px; flex: 1; }
 
-.platform-help, .platform-offer, .platform-content, .platform-main { line-height: 1.5em; }
+.platform-help, .platform-offer, .platform-content, .platform-main { line-height: 1.5em; margin: 10px 0; flex-direction: row; display: flex; align-items: stretch; }
 
-.platform-help::before, .platform-offer::before { margin-right: 10px; content: '\21E2'; }
+.platform-help .wrapper, .platform-offer .wrapper, .platform-content .wrapper, .platform-main .wrapper { border-top: 1px solid #c1c1c3; border-bottom: 1px solid #c1c1c3; display: flex; flex: 1; padding: 10px; align-items: center; flex-direction: row; }
 
-.platform-help { border-color: #ffff00; color: #d81159; }
+.platform-help, .platform-offer { border-left: 1px solid #c1c1c3; border-right: 1px solid #c1c1c3; margin: 0 9px; }
 
-.platform-offer { border-color: #2da1e3; color: #001f54; border-bottom-right-radius: 50px; border-top-right-radius: 50px; }
+.platform-help .wrapper, .platform-offer .wrapper { margin: 10px -10px; padding: 10px 20px; }
+
+.platform-offer .wrapper { margin-right: -30px; }
+
+.platform-help .content::before, .platform-offer .content::before { margin-right: 10px; content: '\21E2'; }
+
+.platform-help .content, .platform-offer .content { display: flex; }
+
+.platform-help .header, .platform-offer .header { font-weight: normal; padding: 3px; color: black; }
+
+.platform-help { border-color: #d81159; color: #d81159; }
+
+.platform-offer { border-color: #001f54; color: #001f54; }
 
 /*# sourceMappingURL=main.css.map */

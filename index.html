@@ -3,24 +3,50 @@ layout: default
 title: "United Against COVID-19"
 ---
 
-<h1>United Against COVID-19</h1>
 
 <div class="platforms">
     <div class="platform platforms-header">
-        <div class="platform-main"></div>
-        <div class="platform-content"></div>
-        <div class="platform-help">I need help...</div>
-        <div class="platform-offer">I want to offer help...</div>
+        <div class="platform-main"><h1>United Against COVID-19</h1></div>
+        <div class="platform-help"><span>I need help...</span></div>
+        <div class="platform-offer"><span>I want to offer help...</span></div>
     </div>
 {% for platform in site.platforms %}
     <div class="platform">
         <a class="platform-main" href="{{ platform.main_url }}">
-            <span class="platform-logo" style="background-image: url('{{ platform.logo | relative_url }}')" alt="{{ platform.name }}"></span>
-            <span class="platform-name">{{ platform.name }}</span>
+            <span class="wrapper">
+                <span class="platform-logo" style="background-image: url('{{ platform.logo | relative_url }}')" alt="{{ platform.name }}"></span>
+                <span class="platform-name">{{ platform.name }}</span>
+            </span>
         </a>
-        <div class="platform-content">{{platform.content}}</div>
-        <a class="platform-help" href="{{ platform.help_url }}"><span>{{ platform.help_text }}</span></a>
-        <a class="platform-offer" href="{{ platform.offer_url }}"><span>{{ platform.offer_text }}</span></a>
+        <div class="platform-content">
+            <span class="wrapper">{{platform.content}}</span>
+        </div>
+        <a class="platform-help" href="{{ platform.help_url }}">
+            <span class="wrapper">
+                <span class="header">I need help...</span>
+                <span class="content">{{ platform.help_text }}</span>
+            </span>
+        </a>
+        <a class="platform-offer" href="{{ platform.offer_url }}">
+            <span class="wrapper">
+                <span class="header">I want to offer help...</span>
+                <span class="content">{{ platform.offer_text }}</span>
+            </span>
+        </a>
     </div>
 {% endfor %}
+    <div class="platform platforms-footer">
+        <div class="platform-main"></div>
+        <div class="platform-content"></div>
+        <div class="platform-help"></div>
+        <div class="platform-offer"></div>
+    </div>
 </div>
+<!--<div class="initiatives">-->
+<!--{% for initiative in site.initiatives %}-->
+<!--    <h2></h2>-->
+<!--    <div class="initiative">-->
+<!--        <a class="initiative-link" href="{{ initiative.url }}">{{ initiative.content }}</a>-->
+<!--    </div>-->
+<!--{% endfor %}-->
+<!--</div>-->

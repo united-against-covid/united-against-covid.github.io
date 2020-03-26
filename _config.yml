@@ -3,3 +3,4 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "United Against COVID-19"
 collections:
     - platforms
+    - initiatives
