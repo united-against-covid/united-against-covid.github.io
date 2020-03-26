@@ -2,10 +2,10 @@
 name: "crowdfight"
 logo: "assets/img/crowdfight.jpg"
 main_url: "https://crowdfightcovid19.org/"
-help_text: "In any project whatsoever that helps fighting the pandemic"
+help_text: "In any scientific project against the pandemic"
 help_url: "http://crowdfightcovid19.org/covid19researchers"
-offer_text: "Of any kind whatsoever"
+offer_text: "Of any kind (mostly with scientific skills, but all are welcome as volunteers)"
 offer_url: "https://crowdfightcovid19.org/volunteers"
 ---
 
-Biggest platform to date, 30’000 volunteers, quality control, moderation, has already helped solve many problems 
+Accepts any type of request from scientists. Moderated and with quality control. Most volunteers are also scientists (but all are welcome). >30 000 volunteers 
